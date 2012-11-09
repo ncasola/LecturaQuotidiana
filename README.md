@@ -1,0 +1,1 @@
+Bienvenido a Lectura Quotidiana. Esta pagina pretende servir como intermediario entre la web evangelizo.org y los dispositivos moviles modernos, adaptando su intefaz. Todos los textos provienen de esta pagina.
