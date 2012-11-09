@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Lectura Quotidiana</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script>
+	$().ready(function() {
+	 $('#ayer  .load').load('./function/php/ayer.html');
+	 $('#hoy  .load').load('./function/php/hoy.html');
+	 $('#manana  .load').load('./function/php/manana.html');
+	 });
+	</script>
+</head>
+<body> 
+
+<div data-role="page" id="main" data-theme="b" data-content-theme="b" data-title="Bienvenido">
+
+	<div data-role="header" data-position="fixed">
+	        <a href="index.html" data-icon="home">Home</a>
+		<h1>Lectura Quotidiana</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+	<div data-role="collapsible" data-theme="b" data-content-theme="c">
+   <h3>Info</h3>
+   <p>Bienvenido a Lectura Quotidiana, donde puedes encontrar las lecturas de cada dia comentadas. Solamente pulsa Ayer, Hoy o Mañana y disfruta de la palabra de Dios :)</p>
+</div> 
+	<ul data-role="listview" data-inset="true">
+	
+		<li><a href="#ayer" data-transition="flip" data-theme="a">Ayer</a></li>
+		<li><a href="#hoy" data-transition="flip" data-theme="a">Hoy</a></li>
+		<li><a href="#manana" data-transition="flip" data-theme="a">Mañana</a></li>		
+		</ul>
+	</div><!-- /content -->
+	 <div data-role="footer">
+	 <div data-role="navbar">
+		<ul>
+			<li><a href="http://twitter.com/ncasolajimenez">@ncasolajimenez</a></li>
+			<li><a href="http://ncasolajimenez.es">ncasolajimenez.es</a></li>
+			<li><a href="http://evangeliodeldia.org/">evangeliodeldia.org/</a></li>
+		</ul>
+	</div><!-- /navbar -->
+   </div>
+
+</div><!-- /Principal -->
+
+<div data-role="page" id="ayer" data-title="Ayer" data-theme="b" data-content-theme="b">
+   <div data-role="header" data-position="fixed">
+    <a href="index.html" data-icon="home">Home</a>
+      <h1>Lecturas del dia de ayer</h1>
+   </div>
+   <div data-role="content" class="load">   
+     
+   </div>
+   <div data-role="footer">
+      <div data-role="navbar">
+		<ul>
+			<li><a href="http://twitter.com/ncasolajimenez">@ncasolajimenez</a></li>
+			<li><a href="http://ncasolajimenez.es">ncasolajimenez.es</a></li>
+			<li><a href="http://evangeliodeldia.org/">evangeliodeldia.org/</a></li>
+		</ul>
+	</div><!-- /navbar -->
+   </div>
+</div>
+<!-- /Ayer -->
+<div data-role="page" id="hoy" data-title="Hoy" data-theme="b" data-content-theme="b">
+   <div data-role="header" data-position="fixed">
+    <a href="index.html" data-icon="home">Home</a>
+      <h1>Lecturas del dia de hoy</h1>
+   </div>
+   <div data-role="content" class="load">   
+        
+   </div>
+   <div data-role="footer">
+      <div data-role="navbar">
+		<ul>
+			<li><a href="http://twitter.com/ncasolajimenez">@ncasolajimenez</a></li>
+			<li><a href="http://ncasolajimenez.es">ncasolajimenez.es</a></li>
+			<li><a href="http://evangeliodeldia.org/">evangeliodeldia.org/</a></li>
+		</ul>
+	</div><!-- /navbar -->
+   </div>
+</div>
+<!-- /Hoy -->
+<div data-role="page" id="manana" data-title="mañana" data-theme="b" data-content-theme="b">
+   <div data-role="header" data-position="fixed">
+    <a href="index.html" data-icon="home">Home</a>
+      <h1>Lecturas de Mañana</h1>
+   </div>
+   <div data-role="content" class="load">   
+        
+   </div>
+   <div data-role="footer">
+      <div data-role="navbar">
+		<ul>
+			<li><a href="http://twitter.com/ncasolajimenez">@ncasolajimenez</a></li>
+			<li><a href="http://ncasolajimenez.es">ncasolajimenez.es</a></li>
+			<li><a href="#">Three</a></li>
+		</ul>
+	</div><!-- /navbar -->
+   </div>
+</div>
+<!-- /Mañana -->
+
+</body>
+</html>

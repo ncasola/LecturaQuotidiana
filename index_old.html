@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html>
+<head>
+<meta content="text/html; charset=UTF-8"
+http-equiv="content-type">
+<title>Quotidiana</title>
+<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript" src="function/java/core.js"></script>
+<script type="text/javascript" src="function/java/app.js"></script>
+<link rel="stylesheet" href="function/css/style.css" type="text/css" media="all">
+<style>
+#footer {
+	width: 400px;
+	height: 1px;
+	text-align:center;
+	display: block;
+	font-family: 'Nothing You Could Do', cursive;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25928574-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="contenedor" class="contenedor">
+<div id="banner" class="banner">
+<h1><a href="index.html" class="hiddenlink">Quotidiana</a></h>
+<h3>Las lecturas de cada dia, Comentadas</h>
+</div>
+<div id="contenido" class="box contenido">
+<div id="contenido_oculto">
+<ul id="lista" class="lista">
+<br>
+<li><INPUT TYPE="button" onClick="$('#show').load('function/php/ayer.html');$('#lecturas').toggle(200);$('#show').toggle(200);$('#contenido_oculto').toggle(200)" class="button super blue letra" VALUE="Ayer"></li>
+<li><INPUT TYPE="button" onclick="$('#show').load('function/php/hoy.html');$('#lecturas').toggle(200);$('#show').toggle(200);$('#contenido_oculto').toggle(200)" class="button super blue letra" VALUE="Hoy"></li>
+<li><INPUT TYPE="button" onclick="$('#show').load('function/php/manana.html');$('#lecturas').toggle(200);$('#show').toggle(200);$('#contenido_oculto').toggle(200)" class="button super blue letra" VALUE="Mañana"></li>
+</ul>
+</div>
+<div id="barra">
+<ul class="lista">
+<li><INPUT TYPE="button" onclick="$('#show').toggle(200);$('#lecturas').toggle(200);$('#contenido_oculto').toggle(200)" class="button small green letra" VALUE="Mostrar/Ocultar Lectio"></li>
+<li><INPUT TYPE="button" onclick="$('#about').load('function/php/quotidiana_old.php', {about: 'about'});$('#contenido_oculto').toggle(200);$('#about').toggle(200)" class="button small red letra" VALUE="Info"></li>
+</ul>
+</div>
+<div id="loading" style="display: none;" class="banner"><img src="content/loading.gif" alt="Cargando..."></div>
+<div id="lecturas" style="display: none;">
+<div id="show" style="display: none;"></div>
+<br>
+<ul class="lista">
+<li><INPUT TYPE="button" onclick="$('#show').toggle(200);$('#lecturas').toggle(200);$('#contenido_oculto').toggle(200)" class="button small green letra" VALUE="Mostrar/Ocultar Lectio"></li>
+</ul>
+</div>
+<div id="about" style="display: none;"></div>
+</div>
+</div>
+</body>
+</html>
